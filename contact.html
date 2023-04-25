@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Villa De La Kuntzelman | Contact</title>
+    <meta name="author" content="Rochelle Lilly">
+    <meta name="description"
+        content="On this page I will be demonstrating my knowledge of CSS and HTML for my final project for git215 while using forms for the contact page">
+
+    <!-- GOOGLE FONTS LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+    <!--Link to Favicon-->
+    <link rel="icon" type="image/png" href="Images/favicon.ico">
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <a href="./index.html">
+            <h1>Villa De La Kuntzelman</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="./index.html"> Home</a></li>
+                <li><a href="#"> Accommodations</a></li>
+                <li><a href="#"> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h2>Contact Us</h2>
+            <section id="Contact">
+
+                <div id="Left">
+                    <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream
+                        vacation
+                        with
+                        us!
+                        Required fields marked with a *</p>
+
+                    <img src="Images/swiss-peak.jpg" alt="Swiss Peak">
+                </div>
+
+                <div id="Right">
+                    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+
+                        <label for="my-name">Full Name (First and Last) <span class="required">*</span></label>
+                        <input type="text" name="my-name" id="my-name" required>
+
+                        <label for="my-email">Email Address <span class="required">*</span></label>
+                        <input type="email" name="my-email" id="my-email" required>
+
+                        <label for="my-phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" name="my-phone" id="my-phone" pattern="\d{3}-\d{3}-\d{4}" required>
+
+                        <fieldset>
+                            <legend>Preferred Contact Method *</legend>
+                            <input type="radio" name="contact-pref" id="pref-email" checked>
+                            <label for="pref-email">Email</label>
+                            <input type="radio" name="contact-pref" id="pref-phone">
+                            <label for="pref-phone">Phone</label>
+                        </fieldset>
+
+                        <label for="my-comments">Comments *</label>
+                        <input type="text" name="my-comments" id="my-comments" required>
+
+                        <input type="submit" name="my-submit" id="my-submit" value="Submit Form">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p> &copy; 2023 - Villa De La Kuntzelman</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+</body>
